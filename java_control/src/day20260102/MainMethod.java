@@ -6,25 +6,25 @@ public class MainMethod {
 
 	public static void main(String[] args, String time) {
 
-//		if(10<5) {
-//			System.out.println("5보다 크다");
-//		}else {
-//			System.out.println("5보다 작다");
-//		}
-//		//바이킹 탑승 가능 : 145cm 이상
-//		
-//		int i =160;
-//		if (i>=145) {
-//			System.out.println("탑승가능");
-//		}else {
-//			System.out.println("탑승불가");
-//		}
-//		
-//		 int age = 33;
-//		 if((age/10)==3)              //(age>=30 && age < 40)
-//			 System.out.println("30대 이다");
-//	else
-//		     System.out.println("20대 이다");
+		if(10<5) {
+			System.out.println("5보다 크다");
+		}else {
+			System.out.println("5보다 작다");
+		}
+		//바이킹 탑승 가능 : 145cm 이상
+		
+		int i =160;
+		if (i>=145) {
+			System.out.println("탑승가능");
+		}else {
+			System.out.println("탑승불가");
+		}
+		
+		 int age = 33;
+		 if((age/10)==3)              //(age>=30 && age < 40)
+			 System.out.println("30대 이다");
+	else
+		     System.out.println("20대 이다");
 
 		 
 		 //if 주차장에 요금이 기본요금 1000원이다
@@ -35,18 +35,7 @@ public class MainMethod {
 		 //		4시간 12분 (252분) - 2600원
 		 //분을 적으면 요금이 얼마인지 나오게 하라
 		 
-		 int charge = 1000;
-		 int addcharge = 100;
-		 int fourhcharge = 2500;
-		 
-		 
-		 
 		
-		 System.out.println("이용시간(분) : "+time2);
-		Scanner kbd = new Scanner(System.in);
-		String time1 =kbd.nextLine();
-		 
-		 
 		 
 }
 }
