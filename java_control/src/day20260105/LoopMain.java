@@ -93,19 +93,32 @@ public class LoopMain {
 //		}
 		//컴퓨터가 내가낸 문제를 찾을수있게 한번 해보기
 		
-		int com=(int)Math.floor(Math.random()*50)+1;
-		
+		int max =50, min=1;
+		System.out.print("1~50중 입력 : ");
+		int user = kbd.nextInt();
 		while(true) {
-			System.out.print("1~50중 입력 : ");
-			int user = kbd.nextInt();
+
 			
-			if(user > com ) {
-				System.out.println("\nDown");
+			int com=(int)Math.floor(Math.random()*max)+min;
+			if(user < com ) {
+							
+				System.out.println(com);
+				System.out.println("Down\n----------");
+			max=com;
+				
+				
 			}
-			if(user < com) {
-				System.out.println("\nUp");
+			else if(user > com) {
+							
+				System.out.println(com);
+				System.out.println("Up\n------------");
+				
+				
 			}
-			if(user == com) {
+			else if(user == com) {
+				
+				
+				System.out.println(com);
 				System.out.println("정답");
 			break;}
 			

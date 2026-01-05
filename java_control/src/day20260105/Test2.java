@@ -25,7 +25,7 @@ public class Test2 {
 			if (res == 0) {
 				count++;
 				System.out.println("이번판 무승부" + count);
-			} else if (res == -1 || res == 1) {
+			} else if (res == -2 || res == 1) {
 				count2++;
 				System.out.println("이번판 승리" + count2);
 			} else {
