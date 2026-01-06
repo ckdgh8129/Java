@@ -3,8 +3,24 @@ package day20260106;
 public class ArrayMain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 	}
 
 }
+
+
+
+/*
+  배열- 동일한 데이터타입의 데이터 저장공간이 연속적으로 나열되어있는 구조
+  
+ 
+
+
+
+
+
+
+
+
+
+*/
