@@ -92,6 +92,22 @@ public class LoopMain {
 //			if (num == 11) break;
 //		}
 		//컴퓨터가 내가낸 문제를 찾을수있게 한번 해보기
+//	int com=(int)Math.floor(Math.random()*50)+1;
+//		
+//		while(true) {
+//			System.out.print("1~50중 입력 : ");
+//			int user = kbd.nextInt();
+//			
+//			if(user > com ) {
+//				System.out.println("\nDown");
+//			}
+//			if(user < com) {
+//				System.out.println("\nUp");
+//			}
+//			if(user == com) {
+//				System.out.println("정답");
+//			break;}
+//			
 		
 		int max =50, min=1;
 		System.out.print("1~50중 입력 : ");
@@ -105,14 +121,14 @@ public class LoopMain {
 				System.out.println(com);
 				System.out.println("Down\n----------");
 			max=com;
-				
+			
 				
 			}
 			else if(user > com) {
 							
 				System.out.println(com);
 				System.out.println("Up\n------------");
-				
+			com=min;
 				
 			}
 			else if(user == com) {
