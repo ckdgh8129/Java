@@ -4,6 +4,11 @@ public class ArrayMain {
 
 	public static void main(String[] args) {
 		
+		int[] arr = new int[5]; //<<--참조 변수 : 메모리주소를 지정할수 있는 변수이다.
+//[0][1][2][3][4]
+		System.out.println(arr);
+		int[] arr2 = {10,20,30};
+		
 	}
 
 }
