@@ -14,16 +14,23 @@ public class Array2 {
 //			}
 //		}
 //
-		int[] bingo = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 };
-		
-		for(int i=0; i<5; i++) {
-			for(int k=0; k<5; k++) {
-				System.out.println(bingo[i*5+k]);
-			}
-		}
-	}
-	}
+//		int[] bingo = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 };
+//		
+//		for(int i=0; i<5; i++) {
+//			for(int k=0; k<i; k++) {
+//				System.out.println(bingo[i*5+k]);
+//			}
+//		}
+//	}
+//	}
 		//1~100 까지 랜덤으로 중복없이 25개를 뽑아라
+		int[] bingo=new int [100];
+		for(int i=1; i<100; i++) {
+			bingo[i]=i;
+			System.out.println(i);
+		}
 		
 
+	}
+}
 
