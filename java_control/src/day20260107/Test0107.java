@@ -102,7 +102,8 @@ public class Test0107 {
 	            	count++;
 	            	
    
-	               if (count == user) break;
+	               if (count == user)
+	            	   break;
 	            }
 	            else {
 	              
