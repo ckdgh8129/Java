@@ -7,30 +7,30 @@ public class Goods {
 	private String Category; // 카테고리
 	private int num;	//수량
 	
-//	public String getItem() {
-//		return item;
-//	}
-//	public void setItem(String item) {
-//		this.item = item;
-//	}
-//	public int getPrice() {
-//		return price;
-//	}
-//	public void setPrice(int price) {
-//		this.price = price;
-//	}
-//	public String getCategory() {
-//		return Category;
-//	}
-//	public void setCategory(String category) {
-//		Category = category;
-//	}
-//	public int getNum() {
-//		return num;
-//	}
-//	public void setNum(int num) {
-//		this.num = num;
-//	}
+	public String getItem() {
+		return item;
+	}
+	public void setItem(String item) {
+		this.item = item;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public String getCategory() {
+		return Category;
+	}
+	public void setCategory(String category) {
+		Category = category;
+	}
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
 	@Override
 	public String toString() {
 		return "진열상품 [상품명=" + item + ", 가격=" + price +"만원"+", 카테고리=" + Category + ", 갯수=" + num + "]";
@@ -43,12 +43,6 @@ public class Goods {
 		this.num = num;
 	}
 	
-//	public void add(String item, int price, String category, int num) {
-//		this.item = item;
-//		this.price = price;
-//		Category = category;
-//		this.num = num;
-//	}
-	
+
 	
 }
