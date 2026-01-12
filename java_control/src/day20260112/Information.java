@@ -44,12 +44,12 @@ public class Information {
 		this.number = number;
 	}
 	
-	public void enter(String name, String id, String password, String number) {
-		this.name=name;
-		this.id = id;
-		this.password = password;
-		this.number = number;
-	}
+//	public void enter(String name, String id, String password, String number) {
+//		this.name=name;
+//		this.id = id;
+//		this.password = password;
+//		this.number = number;
+//	}
 	
 	
 }
