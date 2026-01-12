@@ -34,7 +34,7 @@ public class Information {
 	}
 	@Override
 	public String toString() {
-		return "Information [name=" + name + ", id=" + id + ", password=" + password + ", number=" + number + "]";
+		return "내정보 [이름=" + name + ", 아이디=" + id + ", 비밀번호=" + password + ", 전화번호=" + number + "]";
 	}
 	public Information(String name, String id, String password, String number) {
 		super();

@@ -33,7 +33,7 @@ public class Goods {
 	}
 	@Override
 	public String toString() {
-		return "Goods [item=" + item + ", price=" + price + ", Category=" + Category + ", num=" + num + "]";
+		return "진열상품 [상품명=" + item + ", 가격=" + price +"만원"+", 카테고리=" + Category + ", 갯수=" + num + "]";
 	}
 	public Goods(String item, int price, String category, int num) {
 		super();
