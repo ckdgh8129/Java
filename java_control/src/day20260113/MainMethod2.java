@@ -6,7 +6,9 @@ public class MainMethod2 {
 		
 		DBConnect connect = new DBConnect();		
 		
+		Product[] products = connect.selectData();
 		
+		System.out.println(products[0] );
 		
 
 	}
