@@ -27,5 +27,5 @@ public abstract class Appliance {//전자제품
 //		String res = onoff ? "켜짐" : "꺼짐";
 //
 //		System.out.println("전원" + res);
-	}
+	
 }
