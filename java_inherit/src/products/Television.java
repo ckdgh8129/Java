@@ -6,6 +6,10 @@ import common.Appliance;
 
 public class Television extends Appliance{ //tv
 
+	public int sound;
+	public int ch;
+	
+	
 	@Override
 	public void power() {
 		onoff = !onoff;
