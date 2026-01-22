@@ -1,23 +1,24 @@
 package exam08;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
-public class MemberView {
+public class MemberList2 {
 
 	public static void main(String[] args) {
+		
+		List<MemberDTO> list = new ArrayList<>();
+		
+		
 		String dbUrl = "jdbc:mysql://localhost:3306/javaExample?serverTimezone=Asia/Seoul";
 		String dbUsr = "javauser";
 		String dbpwd = "1234";
-		
-		Scanner sc = new Scanner(System.in);
-		System.out.print("상세보기할 아이디: ");
-		String id = sc.nextLine();
-		sc.close();
-		
+
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -28,26 +29,40 @@ public class MemberView {
 			conn = DriverManager.getConnection(dbUrl, dbUsr, dbpwd);
 //			//--------------------------------------------------------------
 			
-			String sql ="select * from member where id=?";
-	
+			String sql = "select * from member";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, id);
 			rs = pstmt.executeQuery();
-			if(rs.next()){
-				int no = rs.getInt("no");
-//				String id = rs.getString("id");
-				String pw = rs.getString("password");
-				String name = rs.getString("name");
-				String phone = rs.getString("phone");
-				String createdDate = rs.getString("createdDate");
-				System.out.printf("%s\t%s\t%s\t%s\t%s\t\n", no,id, name, phone, createdDate);
-			}else { 
-			System.out.println("등록된 회원이 없습니다.");
+			while(rs.next()){
+				
+				
+//				String[] strs = new String[6];
+//						
+//				strs[0] = no+""; 
+//				strs[1] = id; 
+//				strs[2] = pw; 
+//				strs[3] = name; 
+//				strs[4] = phone; 
+//				strs[5] = createdDate+""; 
+//				
+			MemberDTO memberDTO = new MemberDTO();
+			memberDTO.setNo(rs.getInt("no"));
+			memberDTO.setId(rs.getString("id"));
+			memberDTO.setPassword(rs.getString("password"));
+			memberDTO.setName(rs.getString("name"));
+			memberDTO.setPhone(rs.getString("phone"));
+			memberDTO.setCreatedDate(rs.getDate("createdDate"));
+				
+//			MemberDTO memberDTO = new MemberDTO(no, id, pw, name, phone, createdDate);
 			
+			
+			
+			
+			list.add(memberDTO);
+				
 			}
-		
+			
 			//-------------------------------------------------------------
-		}catch (Exception e) {
+		} catch (Exception e) {
 			System.out.println("드리이버 로딩 실패..또는 접속 실패..");
 		} finally {
 			try {
@@ -66,10 +81,14 @@ public class MemberView {
 			}
 
 		}
+		
+		for(int i=0; i<list.size(); i++) {
+		MemberDTO dto =	list.get(i);
+		System.out.printf("%s\t%s\t%s\t%s\t%s\t\n", dto.getNo(),dto.getId(), dto.getName(), dto.getPhone(), dto.getCreatedDate());
+		}
+		
 		System.out.println("== 프로그램 종료 ==");
 
-	
+	}
 
-	
-
-		}}
+}
