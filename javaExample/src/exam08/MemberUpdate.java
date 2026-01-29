@@ -72,3 +72,12 @@ public class MemberUpdate {
 	}
 
 }
+
+
+
+
+
+
+
+//update student set phone =?, address = ? 
+//where hakbun=?
